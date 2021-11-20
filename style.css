@@ -194,7 +194,6 @@ article li > img {
 
 .table-of-contents ol li a:hover {
     background-color: var(--highlingt-color);
-    box-shadow: var(--shadow-elevation-medium),white 0 5px 0 -2px;
 }
 
 .shortcut {
@@ -243,6 +242,7 @@ article li > img {
     margin: 0;
     margin: 10px 0;
     transition: transform .1s;
+    font-size: 1rem;
 }
 
 .contribute i {
