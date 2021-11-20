@@ -265,3 +265,31 @@ article li > img {
     8% {box-shadow: var(--most-important-text) 0 0 0;transform: scale(1);}
     100% {box-shadow: var(--most-important-text) 0 0 0;}
 }
+
+.shortcut-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+    margin: 20px 0;
+}
+
+.shortcut-grid .shortcut-item {
+    display: flex;
+    justify-content: space-between;
+    gap:2%;
+}
+
+.shortcut-grid .shortcut-item span:nth-child(2) {
+    font-size: 1.1rem;
+    box-shadow: inset var(--most-important-text) 0 0 0 2px;
+}
+
+.shortcut-grid .shortcut-item > span {
+    background-color: var(--highlingt-color);
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+    font-family: Roboto Mono;
+    text-align: center;
+}
