@@ -1,0 +1,196 @@
+:root {
+    --color-base:#3b3b3b;
+    --elevated-base:#384A4A;
+    --elevated-base-darker:#293636;
+    --highlingt-color:#077187;
+    --basic-text:#EDF7F7;
+    --most-important-text:#F9564F;
+
+    --shadow-color: 0deg 0% 0%;
+    --shadow-elevation-low:
+      0px 0.7px 0.5px hsl(var(--shadow-color) / 0.4),
+      0.2px 3.1px 2.3px -5px hsl(var(--shadow-color) / 0.2);
+    --shadow-elevation-medium:
+      0px 0.7px 0.5px hsl(var(--shadow-color) / 0.38),
+      0.2px 2.6px 2px -2.5px hsl(var(--shadow-color) / 0.25),
+      1px 15.7px 11.8px -5px hsl(var(--shadow-color) / 0.13);
+    --shadow-elevation-high:
+      0px 0.7px 0.5px hsl(var(--shadow-color) / 0.42),
+      0.1px 2.1px 1.6px -1.2px hsl(var(--shadow-color) / 0.33),
+      0.8px 11.7px 8.8px -2.5px hsl(var(--shadow-color) / 0.25),
+      2.4px 37.7px 28.3px -3.7px hsl(var(--shadow-color) / 0.17),
+      5.7px 88.5px 66.5px -5px hsl(var(--shadow-color) / 0.08);
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--basic-text);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html , body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-base);
+}
+
+body main > header {
+    align-items: center;
+    background:linear-gradient(to bottom, #1f0606f1, #4a024de3), url(https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.473) 0 0 150px;
+    color: var(--basic-text);
+    display: flex;
+    flex-direction: column;
+    height: min(50vh,1080px);
+    justify-content: center;
+    max-height: 1080px;
+}
+
+body main > header * {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main section {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+article img {
+    max-width: 100%;
+}
+
+.m-header > h1 {
+    font-size: 4rem;
+    color:var(--most-important-text);
+}
+
+.m-header > p {
+    font-size: 1.5rem;
+}
+
+.side-by-side {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+}
+
+.side-by-side > div {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.side-by-side div > p {
+    font-size: 1.2rem;
+}
+
+.side-by-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tut-art {
+    margin-bottom: 15vh;
+}
+
+.tut-art h2 {
+    font-size: 3rem;
+    color: var(--most-important-text);
+    margin: 50px 0 20px 0;
+}
+
+.tut-art h3 {
+    font-size: 2rem;
+}
+
+.tut-art p {
+    margin: 20px 0 10px;
+}
+
+.tut-art ol {
+    font-size: 1.8rem;
+    line-height: 2;
+    padding-left: 2rem;
+}
+
+.tut-art li {
+    height: fit-content;
+    min-height: 10vh;
+}
+
+.tut-art li p {
+    font-size: 1rem;
+}
+
+.table-of-contents {
+    width: 100%;
+    position: fixed;
+    left: 10%;
+    top:5%;
+
+}
+
+.shortcut {
+    text-transform: uppercase;
+    background-color: var(--elevated-base);
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: fit-content;
+    font-size: 1rem;
+    font-family: Roboto Mono;
+    box-shadow: 2px 2px 0 2px var(--elevated-base-darker);
+}
+
+.shortcut::before {
+    content: "Shortcut: ";
+}
+
+.hint {
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: var(--shadow-elevation-high);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--highlingt-color);
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 10% auto;
+}
+
+.hint img {
+    border-radius: 5px;
+    box-shadow: var(--shadow-elevation-low);
+    margin: 15px 0;
+}
+
+.clickable {
+    display: block;
+    background-color: var(--highlingt-color);
+    text-decoration: none;
+    padding: 15px 20px;
+    width: fit-content;
+    border-radius: 50px;
+    box-shadow: var(--shadow-elevation-medium);
+    font-weight: bold;
+    margin: 0;
+    margin: 10px 0;
+    transition: transform .1s;
+}
+
+.clickable:hover {
+    transform: scale(0.95);
+}
