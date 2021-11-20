@@ -145,7 +145,6 @@ article li > img {
 
 .tut-art li {
     height: fit-content;
-    min-height: 10vh;
     margin-bottom: 40px;
 }
 
