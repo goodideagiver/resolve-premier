@@ -245,6 +245,10 @@ article li > img {
     transition: transform .1s;
 }
 
+.contribute i {
+    color: var(--most-important-text);
+}
+
 .clickable:hover {
     transform: scale(0.95);
 }
