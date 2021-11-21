@@ -160,7 +160,7 @@ article li > img {
     top: 0;
     z-index: 5;
     height: fit-content;
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom,var(--color-base) 90%,rgba(0, 0, 0, 0));
 }
 
 .table-of-contents ol {
