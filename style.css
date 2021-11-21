@@ -281,6 +281,11 @@ article li > img {
     position: relative;
 }
 
+.shortcut-grid .shortcut-item:nth-child(-n+4) span:nth-child(2) {
+    box-shadow: inset 0 0 0 2px royalblue !important;
+    background-color: rebeccapurple;
+}
+
 .shortcut-grid .shortcut-item:hover span:nth-child(1), .shortcut-grid .shortcut-item:hover span:nth-child(2){
     background-color: var(--most-important-text);
 }
@@ -307,6 +312,7 @@ article li > img {
     transform: translate(0,+20%);
     display: block;
     visibility: hidden;
+    text-align: start;
 }
 
 .shortcut-grid .shortcut-item:hover span:nth-child(3) {
