@@ -279,6 +279,8 @@ article li > img {
     gap:2%;
     flex-wrap: wrap;
     position: relative;
+    user-select: none;
+    cursor: pointer;
 }
 
 .shortcut-grid .shortcut-item:nth-child(-n+4) span:nth-child(2) {
@@ -319,6 +321,7 @@ article li > img {
     opacity: 100%;
     transform: translate(0,0);
     visibility:visible;
+    transition-delay: 0.2s;
 }
 
 .shortcut-grid .shortcut-item > span {
