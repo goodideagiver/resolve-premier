@@ -91,6 +91,35 @@ article li > img {
     width: fit-content;
     padding: 5%;
     box-shadow: var(--shadow-elevation-high),var(--shadow-elevation-high);
+    transition: transform .5s,box-shadow .5s,visibility 1s;
+    overflow-y: auto;
+}
+
+.hide-list {
+    transform: translate(-100%,0%);
+    visibility: hidden;
+    box-shadow: none;
+}
+
+.close-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5%;
+    background-color: var(--most-important-text);
+    margin: 20px 0;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: var(--shadow-elevation-medium);
+}
+
+.close-btn:hover {
+    background-color: var(--highlingt-color);
+}
+
+.close-btn i {
+    color: var(--basic-text);
+    font-size: 50px;
 }
 
 .m-header > h1 {
@@ -130,6 +159,7 @@ article li > img {
 .tut-art {
     margin-bottom: 15vh;
     position: relative;
+    scroll-snap-align: start;
 }
 
 .tut-art h2 {
