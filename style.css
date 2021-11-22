@@ -65,7 +65,7 @@ body main > header * {
 
 main section {
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -405,9 +405,31 @@ article li > img {
     transition: background-color 0.1s ease-out;
 }
 
-@media screen and (max-width:825px) {
+@media screen and (max-width:1000px) {
+    .shortcut-grid {
+        grid-template-columns: auto auto;
+        gap: 2%;
+    }
     main > section {
         padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .shortcut-grid {
+        grid-template-columns: auto;
+        gap: 1%;
+    }
+    main > section {
+        padding: 0 10px;
+    }
+}
+
+
+
+@media screen and (max-width:825px) {
+    .side-list {
+        transition: transform .1s,box-shadow 1s,visibility .2s;
     }
 
     .shortcut {

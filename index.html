@@ -29,7 +29,9 @@
         <nav class="side-list hide-list" id="sideList">
             <h2>List of articles</h2>
             <button class="close-btn" onclick="showMenu();"><i class="fas fa-angle-double-left"></i></button>
-            <a id="hideBtn" class="clickable" href="javascript:;" onclick="hideArt();">Hide non essential articles</a>
+            <div onclick="showMenu();">
+                <a id="hideBtn" class="clickable" href="javascript:;" onclick="hideArt();">Hide non essential articles</a>
+            </div>
             <ol onclick="showMenu();">
                 <h3>Intro</h3>
                 <li><a href="#what">What is this?</a></li>
