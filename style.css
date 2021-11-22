@@ -89,10 +89,23 @@ article li > img {
     background-color: var(--elevated-base-darker);
     z-index: 6;
     width: fit-content;
-    padding: 5%;
+    padding: 2% 5% 5% 5%;
     box-shadow: var(--shadow-elevation-high),var(--shadow-elevation-high);
     transition: transform .5s,box-shadow .5s,visibility 1s;
     overflow-y: auto;
+}
+
+.side-list li {
+    margin: 10px;
+}
+
+.side-list h2 {
+    text-align: center;
+}
+
+.side-list h3 {
+    margin-top: 25px;
+    font-size: 1.5rem;
 }
 
 .hide-list {
