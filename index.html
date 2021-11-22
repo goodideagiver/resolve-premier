@@ -29,10 +29,13 @@
         <nav class="side-list" id="sideList">
             <h2>List of articles</h2>
             <button class="close-btn" onclick="showMenu();"><i class="fas fa-angle-double-left"></i></button>
+            <a id="hideBtn" class="clickable" href="javascript:;" onclick="hideArt();">Hide non essential articles</a>
             <ol onclick="showMenu();">
                 <h3>Intro</h3>
                 <li><a href="">What is this?</a></li>
                 <li><a href="">Getting started</a></li>
+            </ol>
+            <ol onclick="showMenu();">
                 <h3>Basic</h2>
                 <li><a href="#cut">How to cut</a></li>
                 <li><a href="#delete">Delete clips</a></li>
@@ -42,6 +45,8 @@
                 <li><a href="">Changing speed</a></li>
                 <li><a href="">Timeline zoom</a></li>
                 <li><a href="#export">Export / Render</a></li>
+            </ol>
+            <ol onclick="showMenu();">
                 <h3>More advanced</h3>
                 <li><a href="">Scale / position video</a></li>
                 <li><a href="">Advanced clip selection</a></li>
@@ -53,16 +58,12 @@
             <ol>
                 <li><a href="#home">Home</a></li>
                 <li><a href="javascript:;" onclick="showMenu();"><i class="fas fa-list"></i> Article list</a></li>
-                <li><a href="#cut">How to cut</a></li>
-                <li><a href="#delete">Delete clips</a></li>
-                <li><a href="#audio-edit">Audio</a></li>
-                <li><a href="#export">Export / Render</a></li>
                 <li><a href="#shortcut">Shortcuts</a></li>
                 <li><a class="contribute" href="https://github.com/goodideagiver/resolve-premier" target="_blank" noreferer noopener><i class="fab fa-github"></i> Contribute</a></li>
             </ol>
         </nav>
         <section>
-            <article class="tut-art">
+            <article class="tut-art unc">
                 <h2>What is this?</h2>
                 <div class="side-by-side">
                     <div>
@@ -71,7 +72,7 @@
                     <div class="hint">It's not a zero to hero tutorial. You need to have some editing knowledge in order to fully understand content of this website.</div>
                 </div>
             </article>
-            <article class="tut-art">
+            <article class="tut-art unc">
                 <header>
                     <h2 id="intro">Getting started</h2>
                 </header>
@@ -128,7 +129,7 @@
                         </ol>
                     </div>
             </article>
-            <article class="tut-art">
+            <article class="tut-art unc">
                 <header>
                     <h2 id="join">Joining clips</h2>
                 </header>
@@ -168,32 +169,32 @@
                         </ol>
                     </div>
             </article>
-            <article class="tut-art">
+            <article class="tut-art unc">
                 <header>
                     <h2 id="">Adding text</h2>
                 </header>
             </article>
-            <article class="tut-art">
+            <article class="tut-art unc">
                 <header>
                     <h2 id="">Changing speed</h2>
                 </header>
             </article>
-            <article class="tut-art">
+            <article class="tut-art unc">
                 <header>
                     <h2 id="">Transform video</h2>
                 </header>
             </article>
-            <article class="tut-art">
+            <article class="tut-art unc">
                 <header>
                     <h2 id="">Tmeline zoom</h2>
                 </header>
             </article>
-            <article class="tut-art">
+            <article class="tut-art unc">
                 <header>
                     <h2 id="">Advanced clip selection</h2>
                 </header>
             </article>
-            <article class="tut-art">
+            <article class="tut-art unc">
                 <header>
                     <h2 id="">Workflow optimization</h2>
                 </header>

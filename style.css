@@ -96,7 +96,18 @@ article li > img {
 }
 
 .side-list li {
-    margin: 10px;
+    margin: 0px 0 0px 28px;
+}
+
+.side-list li a {
+    text-decoration: none;
+    padding: 15px 15px 15px 0;
+    width: 100%;
+    display: block;
+}
+
+.side-list li a:hover {
+    color: var(--highlingt-color);
 }
 
 .side-list h2 {
@@ -133,6 +144,10 @@ article li > img {
 .close-btn i {
     color: var(--basic-text);
     font-size: 50px;
+}
+
+#hideBtn {
+    text-align: center;
 }
 
 .m-header > h1 {
