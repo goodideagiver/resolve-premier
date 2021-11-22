@@ -81,6 +81,18 @@ article li > img {
     margin: 30px 0;
 }
 
+.side-list {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--elevated-base-darker);
+    z-index: 6;
+    width: fit-content;
+    padding: 5%;
+    box-shadow: var(--shadow-elevation-high),var(--shadow-elevation-high);
+}
+
 .m-header > h1 {
     font-size: 4rem;
     color:var(--most-important-text);
