@@ -230,7 +230,7 @@ article li > img {
     top: 0;
     z-index: 5;
     height: fit-content;
-    background: linear-gradient(to bottom,var(--color-base) 90%,rgba(0, 0, 0, 0));
+    background-color: var(--elevated-base-darker);
 }
 
 .table-of-contents ol {
@@ -275,6 +275,7 @@ article li > img {
     font-size: 1rem;
     font-family: Roboto Mono;
     box-shadow: 2px 2px 0 2px var(--elevated-base-darker);
+    font-weight: normal;
 }
 
 .shortcut::before {
@@ -331,7 +332,7 @@ article li > img {
 @keyframes contribute {
     0% {box-shadow: var(--most-important-text) 0 0 0;}
     5% {box-shadow: var(--most-important-text) 0 0 5px 0px;
-    transform: scale(1.1);}
+    transform: scale(1.03);}
     8% {box-shadow: var(--most-important-text) 0 0 0;transform: scale(1);}
     100% {box-shadow: var(--most-important-text) 0 0 0;}
 }
@@ -460,9 +461,8 @@ article li > img {
         font-size: 1.5rem;
     }
 
-    .tut-art ol > li:first-child {
+    .tut-art ol > li {
         font-size: 1.1rem;
-        font-weight: bold;
     }
 
     .side-list {
