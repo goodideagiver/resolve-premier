@@ -95,19 +95,23 @@ article li > img {
     overflow-y: auto;
 }
 
+.side-list ol {
+    list-style: none;
+}
+
 .side-list li {
-    margin: 0px 0 0px 28px;
+    margin: 0;
 }
 
 .side-list li a {
     text-decoration: none;
-    padding: 15px 15px 15px 0;
+    padding: 15px 15px 15px 15px;
     width: 100%;
     display: block;
 }
 
 .side-list li a:hover {
-    color: var(--highlingt-color);
+    background-color: rgba(128, 128, 128, 0.198);
 }
 
 .side-list h2 {
@@ -253,7 +257,6 @@ article li > img {
     text-align: center;
     vertical-align: middle;
     background-color: var(--elevated-base);
-    border-radius: 50px;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -435,9 +438,34 @@ article li > img {
     }
 }
 
+li.show-btn {
+    flex-basis:50% !important;
+    display: none !important;
+}
 
+.show-btn a {
+    background-color: var(--most-important-text) !important;
+    width: 100% !important;
+}
+
+.show-btn i {
+    font-size: 25px;
+}
 
 @media screen and (max-width:825px) {
+
+    .table-of-contents ol li{
+        padding: 5px 0;
+    }
+
+    li.show-btn {
+        display:flex !important;
+    }
+
+    .tut-art h2 {
+        border-image: none;
+    }
+    
     .side-list {
         transition: transform .1s,box-shadow 1s,visibility .2s;
     }
@@ -486,6 +514,10 @@ article li > img {
         font-size: 1.1rem;
     }
 
+    .table-of-contents ol li a {
+        border-radius: 0px;
+    }
+    
     .table-of-contents li a {
         font-size: 1rem;
     }
