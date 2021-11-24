@@ -199,9 +199,18 @@ article li > img {
     font-size: 3rem;
     color: var(--most-important-text);
     margin: 50px 0 20px 0;
-    border-bottom: 5px solid var(--most-important-text);
     padding-bottom: 5px;
-    border-image: linear-gradient(to right, var(--most-important-text), rgba(153, 50, 204, 0) 100%) 1;
+}
+
+.tut-art h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 5px;
+    left: 0;
+    margin-top: 5px;
+    background: linear-gradient(90deg, var(--most-important-text) 0%, transparent 100%);
 }
 
 .tut-art h3 {
