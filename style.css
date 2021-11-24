@@ -462,9 +462,9 @@ li.show-btn {
         display:flex !important;
     }
 
-    .tut-art h2 {
+    /* .tut-art h2 {
         border-image: none;
-    }
+    } */
     
     .side-list {
         transition: transform .1s,box-shadow 1s,visibility .2s;
