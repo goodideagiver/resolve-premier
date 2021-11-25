@@ -6,6 +6,9 @@
     --basic-text:#EDF7F7;
     --most-important-text:#F9564F;
 
+    --gradient-top:#1f0606f1;
+    --gradient-bottom:#4a024de3;
+
     --shadow-color: 0deg 0% 0%;
     --shadow-elevation-low:
       0px 0.7px 0.5px hsl(var(--shadow-color) / 0.4),
@@ -45,10 +48,9 @@ html , body {
 
 body main > header {
     align-items: center;
-    background:linear-gradient(to bottom, #1f0606f1, #4a024de3), url(https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background:linear-gradient(to bottom, var(--gradient-top), var(--gradient-bottom)), url(https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
     background-size: cover;
     background-position: center;
-    box-shadow: rgba(0, 0, 0, 0.473) 0 0 150px;
     color: var(--basic-text);
     display: flex;
     flex-direction: column;

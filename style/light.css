@@ -1,0 +1,39 @@
+.light {
+    --color-base:#ffffff;
+    --elevated-base:#F2F2F2;
+    --elevated-base-darker:#D9D9D9;
+    --highlingt-color:#A84CCF;
+    --basic-text:#000000;
+    --most-important-text:#F9564F;
+
+    --gradient-top:#3d1c1cf1;
+    --gradient-bottom:#7a337ce3;
+}
+
+header {
+    position: relative;
+}
+
+.light-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.light-switch i {
+    font-size: 40px;
+    color: var(--basic-text);
+}
+
+@media screen and (max-width:420px) {
+    .light-switch {
+        bottom: -50px;
+    }
+
+    .light-switch i {
+        font-size: 30px;
+    }
+}

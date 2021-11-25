@@ -23,3 +23,7 @@ function hideArt() {
     }
     }
 }
+
+function darkMode() {
+  document.getElementById("body").classList.toggle("light");
+}
