@@ -89,14 +89,16 @@ article li > img {
     background-color: var(--elevated-base-darker);
     z-index: 6;
     width: fit-content;
-    padding: 2% 5% 5% 5%;
     box-shadow: var(--shadow-elevation-high),var(--shadow-elevation-high);
     transition: transform .5s,box-shadow .5s,visibility 1s;
     overflow-y: auto;
+    width: 400px;
+    padding: 2% 0;
 }
 
-.side-list ol {
+.side-list h3 {
     list-style: none;
+    padding: 15px;
 }
 
 .side-list li {
@@ -105,7 +107,7 @@ article li > img {
 
 .side-list li a {
     text-decoration: none;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 30px;
     width: 100%;
     display: block;
 }
@@ -123,6 +125,11 @@ article li > img {
     font-size: 1.5rem;
 }
 
+.side-list .clickable {
+    border-radius: 0;
+    width: 100%;
+}
+
 .hide-list {
     transform: translate(-100%,0%);
     visibility: hidden;
@@ -136,7 +143,6 @@ article li > img {
     padding: 5%;
     background-color: var(--most-important-text);
     margin: 20px 0;
-    border-radius: 20px;
     width: 100%;
     box-shadow: var(--shadow-elevation-medium);
 }
