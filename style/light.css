@@ -22,11 +22,12 @@ header {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 15px;
     transition: text-shadow 1s, opacity 1s;
     /* background-color: var(--basic-text);
     border-radius: 50px; */
     opacity: 20%;
+    height: fit-content;
+    padding: 15px;
 }
 
 .light-switch .circle {
@@ -39,16 +40,11 @@ header {
     z-index: 1;
     position: absolute;
     left: 0;
-    top: 4px;
-    bottom: 15px;
+    top: 5px;
 }
 
 .light-switch:hover {
     opacity: 1;
-}
-
-.light-switch:hover .circle {
-    box-shadow: 0 0 5px var(--highlingt-color);
 }
 
 .light-switch i {
@@ -60,12 +56,11 @@ header {
     left: 0;
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:820px) {
     .light-switch {
-        bottom: -50px;
+        bottom: 0;
+        top: auto;
+        right: 5px;
     }
 
-    .light-switch i {
-        font-size: 30px;
-    }
 }
