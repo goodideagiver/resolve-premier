@@ -25,5 +25,26 @@ function hideArt() {
 }
 
 function darkMode() {
-  document.getElementById("body").classList.toggle("light");
+  var moded = window.localStorage.getItem('light');
+  switch (moded) {
+    case "1":
+      window.localStorage.setItem('light','0');
+      document.getElementById('body').classList.remove('light');
+      break;
+    default:
+      window.localStorage.setItem('light','1');
+      document.getElementById('body').classList.toggle('light');
+      break;
+  }
 }
+
+function loadStorage() {
+  var mode =  window.localStorage.getItem('light');
+  if (mode==1) {
+    document.getElementById('body').classList.add('light');
+  } else {
+    document.getElementById('body').classList.remove('light');
+  }
+}
+
+loadStorage();
