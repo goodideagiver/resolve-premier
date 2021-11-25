@@ -94,6 +94,7 @@ article li > img {
     box-shadow: var(--shadow-elevation-high),var(--shadow-elevation-high);
     transition: transform .5s,box-shadow .5s,visibility 1s;
     overflow-y: auto;
+    overscroll-behavior: none;
     width: 400px;
     padding: 2% 0;
 }
@@ -265,7 +266,7 @@ article li > img {
 
 .table-of-contents ol li {
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
     flex-basis: 100%;
 }
@@ -277,7 +278,6 @@ article li > img {
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: var(--shadow-elevation-medium);
     transition: box-shadow 0.1s ease-out;
     width: 100%;
 }
