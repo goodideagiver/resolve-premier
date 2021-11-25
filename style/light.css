@@ -23,14 +23,15 @@ header {
     border: none;
     cursor: pointer;
     transition: text-shadow 1s, opacity 1s;
-    /* background-color: var(--basic-text);
-    border-radius: 50px; */
+    background-color: var(--basic-text);
+    border-radius: 50%;
     opacity: 20%;
-    height: fit-content;
+    height: 52px;
+    width: 52px;
     padding: 15px;
 }
 
-.light-switch .circle {
+/* .light-switch .circle {
     position: absolute;
     top: 0;
     left: 0;
@@ -38,7 +39,7 @@ header {
     font-size: 50px;
     z-index: 1;
     color: var(--basic-text);
-}
+} */
 
 .light-switch:hover {
     opacity: 1;
