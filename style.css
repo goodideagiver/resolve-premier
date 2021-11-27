@@ -464,6 +464,14 @@ li.show-btn {
 }
 
 @media screen and (max-width:825px) {
+    .close-btn i {
+        color: var(--basic-text);
+        font-size: 20px;
+    }
+
+    .close-btn {
+        padding: 15px 20px;
+    }
 
     .table-of-contents ol li{
         padding: 5px 0;
@@ -574,6 +582,9 @@ li.show-btn {
 
 @media screen and (max-width:800px) {
     .donate {
+        position: sticky;
+        top: 0;
+        margin-top: 0;
         background: repeating-linear-gradient(to right,var(--most-important-text),var(--highlingt-color),var(--highlingt-color),var(--most-important-text));
         background-size: 400% 100%;
         background-attachment:local;
