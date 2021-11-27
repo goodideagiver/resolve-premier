@@ -299,6 +299,7 @@ article li > img {
     font-family: Roboto Mono;
     box-shadow: 2px 2px 0 2px var(--elevated-base-darker);
     font-weight: normal;
+    margin: 0 5px;
 }
 
 .shortcut::before {
@@ -322,6 +323,7 @@ article li > img {
     border-radius: 5px;
     box-shadow: var(--shadow-elevation-low);
     margin: 15px 0;
+    max-width: 100% !important;
 }
 
 .clickable {
