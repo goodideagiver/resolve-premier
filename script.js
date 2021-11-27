@@ -48,3 +48,8 @@ function loadStorage() {
 }
 
 loadStorage();
+
+function foldSection(clicked_id) {
+  var element = document.getElementById(clicked_id);
+  element.classList.toggle("hidden");
+}

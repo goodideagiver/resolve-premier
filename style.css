@@ -77,7 +77,6 @@ article img {
     max-width: 100%;
     display: block;
     border-radius: 5px;
-    box-shadow: var(--shadow-elevation-medium);
     max-height: 80vh;
 }
 
@@ -320,7 +319,6 @@ article li > img {
 
 .hint img {
     border-radius: 5px;
-    box-shadow: var(--shadow-elevation-low);
     margin: 15px 0;
     max-width: 100% !important;
 }
@@ -552,4 +550,8 @@ li.show-btn {
         padding: 20px;
     }
 
+}
+
+.hidden {
+    display: none !important;
 }
