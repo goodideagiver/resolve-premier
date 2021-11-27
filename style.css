@@ -581,7 +581,7 @@ li.show-btn {
     100% {background-position: 400% 100%;}
 }
 
-@media screen and(max-width:800px) {
+@media screen and (max-width:800px) {
     .donate {
         background: repeating-linear-gradient(to right,var(--most-important-text),var(--highlingt-color),var(--highlingt-color),var(--most-important-text));
         background-size: 400% 100%;
