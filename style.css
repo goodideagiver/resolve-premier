@@ -132,6 +132,7 @@ article li > img {
 .side-list .clickable {
     border-radius: 0;
     width: 100%;
+    text-align: center;
 }
 
 .hide-list {
@@ -554,4 +555,16 @@ li.show-btn {
 
 .hidden {
     display: none !important;
+}
+
+.fa-mug-hot {
+    animation: 2s funnyrotate infinite;
+}
+
+@keyframes funnyrotate {
+    0% {transform: rotate(20deg);}
+    25% {transform: rotate(20deg);}
+    50% {transform: rotate(-20deg);}
+    75% {transform: rotate(-20deg);}
+    100% {transform: rotate(20deg);}
 }
