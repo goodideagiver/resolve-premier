@@ -542,6 +542,7 @@ li.show-btn {
 
     .side-by-side {
         flex-direction: column;
+        gap: 20px;
     }
     
     .tut-art h2 {
