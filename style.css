@@ -538,6 +538,15 @@ li.show-btn {
     .table-of-contents ol li a {
         border-radius: 0px;
     }
+
+    .table-of-contents ol li {
+        padding: 0;
+    }
+
+    .table-of-contents ol {
+        gap: 0;
+        padding: 0;
+    }
     
     .table-of-contents li a {
         font-size: 1rem;
