@@ -517,6 +517,10 @@ li.show-btn {
         padding: 15px 20px;
     }
 
+    .table-of-contents * {
+        -webkit-overflow-scrolling: auto !important; 
+    }
+
     .table-of-contents ol li{
         padding: 5px 0;
     }
