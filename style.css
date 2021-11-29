@@ -94,12 +94,53 @@ article li > img {
     background-color: var(--elevated-base-darker);
     z-index: 6;
     width: fit-content;
-    box-shadow: var(--shadow-elevation-high),var(--shadow-elevation-high);
+    box-shadow: var(--shadow-elevation-high),var(--shadow-elevation-high),rgba(0, 0, 0, 0.445) 0 0 1500px 2999px;
     transition: transform .5s,box-shadow .5s,visibility 1s;
     overflow-y: auto;
     overscroll-behavior: none;
     width: 400px;
-    padding: 2% 0;
+    padding: 0 0 2% 0;
+    min-width: 25vw;
+}
+
+.side-list * {
+    z-index: 15;
+}
+
+.list-hider {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 25vw;
+    z-index: 0 !important;
+}
+
+.side-list .btn-list  {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    overscroll-behavior:none;
+}
+
+.side-list .btn-list :is(button,a) {
+    margin: 0;
+    text-align: center;
+    box-shadow: none;
+    transition: background-color .3s, box-shadow .3s;
+}
+.side-list .btn-list :is(button,a):hover {
+    transform:none !important;
+    box-shadow: inset rgba(0, 0, 0, 0.418) 0 0 45px 20px;
+}
+
+.side-list .btn-list :nth-child(3) {
+    background-color: var(--elevated-base);
+}
+
+.side-list .btn-list :nth-child(3):hover {
+    background-color: var(--highlingt-color);
 }
 
 .side-list h3 {
@@ -147,9 +188,7 @@ article li > img {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    padding: 5%;
     background-color: var(--most-important-text);
-    margin: 20px 0;
     width: 100%;
     box-shadow: var(--shadow-elevation-medium);
 }
@@ -264,13 +303,12 @@ article li > img {
     justify-content: space-evenly;
     list-style: none;
     height: fit-content;
-    gap: 1%;
-    padding: 0 1%;
+    gap: 5px;
 }
 
 .table-of-contents ol li {
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     display: flex;
     flex-basis: 100%;
 }
@@ -466,6 +504,10 @@ li.show-btn {
 }
 
 @media screen and (max-width:825px) {
+    .list-hider {
+        display: none !important;
+    }
+
     .close-btn i {
         color: var(--basic-text);
         font-size: 20px;
@@ -593,8 +635,6 @@ li.show-btn {
 
 @media screen and (max-width:800px) {
     .donate {
-        position: sticky;
-        top: 0;
         margin-top: 0;
         background: repeating-linear-gradient(to right,var(--most-important-text),var(--highlingt-color),var(--highlingt-color),var(--most-important-text));
         background-size: 400% 100%;
