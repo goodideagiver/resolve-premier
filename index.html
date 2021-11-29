@@ -5,14 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
-    
-    <!-- Load the element definition -->
+    <link rel="stylesheet" href="style/light.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
-    <link rel="stylesheet" href="style/light.css">
+
+    <meta name="title" content="Convert to DaVinci Resolve">
+    <meta name="description" content="Start using DaVinci Resolve. Quickstart your way into editing world and stop paying for other editing programs.">
+    <meta name="keywords" content="Editing, video, software, tutorial">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="PURPLE BLACK">
+    <meta name="theme-color" content="#f9564fff">
+
+    <meta property="og:image" content="https://i.imgur.com/TkkMrpi.jpeg">
+    <meta property="og:title" content="Convert to DaVinci Resolve" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://goodideagiver.github.io/resolve-premier/" />
+    <meta property="og:description" content="Start using DaVinci Resolve. Quickstart your way into editing world and stop paying for other editing programs." />
+
+<!-- Include this to make the og:image larger -->
+<meta name="twitter:card" content="summary_large_image">
+
+
     <title>Convert to Resolve</title>
 </head>
 <body id="body">
@@ -26,6 +42,7 @@
         <nav class="side-list hide-list" id="sideList">
             <h2>List of articles</h2>
             <button class="close-btn" onclick="showMenu();"><i class="fas fa-angle-double-left"></i></button>
+            <a href="https://ko-fi.com/prplblck" class="clickable donate" target="_blank" rel="noopener noreferrer"><i class="fas fa-mug-hot"></i> Buy me a coffe</a>
             <div>
                 <a id="hideBtn" class="clickable" href="javascript:;" onclick="hideArt();">Hide non essential articles</a>
             </div>
@@ -42,7 +59,11 @@
                 <li><a href="#audio-edit">Audio</a></li>
                 <li class="unc"><a href="#addTxt">Adding text</a></li>
                 <li class="unc"><a href="#speed">Changing speed</a></li>
+<<<<<<< HEAD
                 <li class="unc"><a href="#timeline">Timeline zoom</a></li>
+=======
+                <li class="unc"><a  href="#timeline">Timeline zoom</a></li>
+>>>>>>> 11551fe7c1b25d58085f95eb37f1177b4d8a45fb
                 <li><a href="#export">Export / Render</a></li>
                 <li><a href="#shortcut">Shortcuts</a></li>
                 <li class="unc"><a href="#moving">Moving items on timeline</a></li>
@@ -83,11 +104,11 @@
                 <a href="#cut" class="clickable">Skip intro</a>
                 <p>There are couple of ways of cutting imported media.</p>
                 <p>First, you need to select the edit tab.</p>
-                <img style="max-width: 100%;" src="img/Screenshot_832.png" alt="" srcset="">
+                <img class="lazyload" style="max-width: 100%;" data-src="img/Screenshot_832.png" src="img/loading.svg" alt="" srcset="">
                 <p>Drag media from media pool into timeline</p>
-                <img src="img/into-timeline.gif" alt="" srcset="">
+                <img class="lazyload" data-src="img/into-timeline.gif" src="img/loading.svg" alt="" srcset="">
                 <p>Your timeline should end up looking like this</p>
-                <img src="img/Screenshot_83.png" alt="" srcset="">
+                <img class="lazyload" data-src="img/Screenshot_83.png" src="img/loading.svg" alt="" srcset="">
             </article>
             <article class="tut-art">
                 <h2 id="cut">How to cut?</h2>
@@ -110,7 +131,7 @@
                     </div>
                     <div class="hint">
                         <p><b>Hint</b>: You need to have linked selection option enabled to cut audio and video from clip simultaneously (alternatively you can hold <b>ALT</b> to do that</p>
-                        <img src="img/Screenshot_85.png" alt="" srcset="">
+                        <img class="lazyload" data-src="img/Screenshot_85.png" src="img/loading.svg" alt="" srcset="">
                         <span class="shortcut">CTRL + SHIFT + L</span>
                     </div>
                 </div>
@@ -122,10 +143,10 @@
                     <div>
                         <ol>
                             <li>Delete with auto ripple delete <span class="shortcut">DEL</span>
-                                <img src="img/del-ripple.gif" alt="" srcset="">
+                                <img class="lazyload" data-src="img/del-ripple.gif" src="img/loading.svg" alt="" srcset="">
                             </li>
                             <li>Delete without auto ripple delete <span class="shortcut">BACKSPAce</span>
-                                <img src="img/backspace.gif" alt="" srcset="">
+                                <img class="lazyload" data-src="img/backspace.gif" src="img/loading.svg" alt="" srcset="">
                                 <p>You can use <span class="shortcut">CTRL + X</span> to cut clip for the same effect, but the cut clip will end up in your clipboard</p>
                             </li>
                         </ol>
@@ -139,14 +160,14 @@
                         <ol>
                            <li>If your timeline looks like this
                                 <p>and you want to join clips into one, nice, clean looking clip</p>
-                                <img src="img/Screenshot_89.png" alt="" srcset="">
+                                <img class="lazyload" data-src="img/Screenshot_89.png" src="img/loading.svg" alt="" srcset="">
                             </li>
                             <li>Select all clips that you want to join
                                 <p>Press <b>RMB</b>on any clip from selected ones and select first option</p>
-                                <img src="img/Screenshot_87.png" alt="" srcset="">
+                                <img class="lazyload" data-src="img/Screenshot_87.png" src="img/loading.svg" alt="" srcset="">
                             </li>
                             <li>End result
-                                <img src="img/join-clips.gif" alt="" srcset="">
+                                <img class="lazyload" data-src="img/join-clips.gif" src="img/loading.svg" alt="" srcset="">
                             </li>
                         </ol>
                     </div>
@@ -160,13 +181,13 @@
                         <ol>
                             <li>
                                 Your audio track needs to look like this
-                                <img src="img/Screenshot_94.png" alt="" srcset="">
-                                <a class="clickable" href="">How to zoom timeline</a>
+                                <img class="lazyload" data-src="img/Screenshot_94.png" src="img/loading.svg" alt="" srcset="">
+                                <a class="clickable unc" href="#timeline">How to zoom timeline</a>
                             </li>
                             <li>
                                 All you need is <b>ALT</b> key <span class="shortcut">ALT</span>
                                 <p>Select audio clip, hold <b>ALT</b> and hover over thin line in top half of the audio clip. Now all you have to do is press <b>LMB</b>, that will create audio keyframes which can be edited by dragging.</p>
-                                <img src="img/audio-keyframes.gif" alt="">
+                                <img class="lazyload" data-src="img/audio-keyframes.gif" src="img/loading.svg" alt="">
                             </li>
                         </ol>
                     </div>
@@ -180,11 +201,70 @@
                 <header>
                     <h2 id="speed">Changing speed</h2>
                 </header>
+                <h3>First method</h3>
+                <ol>
+                    <li>Right click the clip and select <b>Change clip speed</b> <span class="shortcut">R</span>
+                        <img class="lazyload" src="img/loading.svg" data-src="img/speed/screenshot_99.png" alt="" srcset="">
+                    </li>
+                    <li>Choose desired clip speed<div class="side-by-side">
+                            <div>
+                                <img class="lazyload" src="img/loading.svg" data-src="img/speed/screenshot_100.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <div class="hint">
+                                    <p>
+                                    <b>Hint</b>:
+                                    If you don't tick the <b>Ripple sequence</b> checkbox, your clip duration will not be shortened
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <h3>Second method</h3>
+                <ol>
+                    <li>Enable retime control on clip <span class="shortcut">CTRL + R</span>
+                        <p>You can add speed control points under the playhead and drag them using mouse like shown on the gif below</p>
+                        <img class="lazyload" src="img/loading.svg" data-src="img/speed/ctrlR-speed.gif" alt="" srcset="">
+                    </li>
+                </ol>
+                <h3>Third method</h3>
+                <p>This article is for advanced users, click below to show it</p>
+                <a class="clickable" href="#speed1" onclick="foldSection('speed1')">Toggle section</a>
+                <ol id="speed1" class="hidden" style="scroll-margin: 250px;">
+                    <li>Right click a clip and choose <b>Retime curve</b>
+                        <p>Retime curve is a visual representation of clip speed</p>
+                    </li>
+                    <li>Tick retime speed checkbox
+                        <img class="lazyload" src="img/loading.svg" data-src="img/speed/retime-speed.gif" alt="" srcset="">
+                    </li>
+                    <li>Add points by clicking on the line</li>
+                        <img class="lazyload" src="img/loading.svg" data-src="img/speed/add-points.gif" alt="" srcset="">
+                    <li>You can add ease in and out to keyframes like shown on the gif below
+                        <img class="lazyload" src="img/loading.svg" data-src="img/speed/easeinout.gif" alt="" srcset="">
+                    </li>
+                    <li>To have more control over speed you can adjust scale controls in every corner of the retime control box
+                        <img class="lazyload" src="img/loading.svg" data-src="img/speed/scalespeed.gif" alt="" srcset="">
+                    </li>
+                </ol>
             </article>
             <article class="tut-art unc">
                 <header>
                     <h2 id="transform">Transform video</h2>
                 </header>
+                <ol>
+                    <li>Find effects library</li>
+                    <img class="lazyload" data-src="img/transform/Screenshot_96.png" src="img/loading.svg" alt="">
+                    <li>Find and apply transform effect to a clip</li>
+                    <p>There are other ways to change videos rotation/scale/position, but this way allows the best flexibility</p>
+                    <img class="lazyload" data-src="img/transform/Screenshot_97.png" src="img/loading.svg" alt="">
+                    <li>Go into the effects tab of clip properties</li>
+                    <img class="lazyload" data-src="img/transform/Screenshot_98.png" src="img/loading.svg" alt="">
+                    <li>Add keyframes to desired properties</li>
+                    <img class="lazyload" data-src="img/transform/transform.gif" src="img/loading.svg" alt="">
+                    <li>Final result</li>
+                    <img class="lazyload" data-src="img/transform/skalowanie.gif" src="img/loading.svg" alt="">
+                </ol>
             </article>
             <article class="tut-art unc">
                 <header>
@@ -194,7 +274,7 @@
                     <li>Scroll timeline left and right <span class="shortcut">CTRL + SCROLL</span></li>
                     <li>Scroll timeline up and down <span class="shortcut">SCROLL</span></li>
                     <li>Stretch audio or video height preview on timeline <span class="shortcut">SHIFT + SCROLL</span></li>
-                    <li>Zoom in <span class="shortcut">ALT + SCROLL</span></li>
+                    <li>Zoom in <span class="shortcut">ALT + SCROLL</span> or <span class="shortcut">CTrl + +/-</span></li>
                 </ol>
             </article>
             <article class="tut-art unc">
@@ -220,20 +300,20 @@
                         <ol>
                             <li>Select deliver
                                 <p>It's located at the very bottom of the program</p>
-                                <img src="img/Screenshot_90.png" alt="" srcset="">
+                                <img class="lazyload" data-src="img/Screenshot_90.png" src="img/loading.svg" alt="" srcset="">
                             </li>
                             <li>Select desired preset, or custom settings
                                 <p>Location: top left corner <b>Render Settings</b> tab</p>
-                                <img src="img/Screenshot_91.png" alt="" srcset="">
+                                <img class="lazyload" data-src="img/Screenshot_91.png" src="img/loading.svg" alt="" srcset="">
                             </li>
                             <li>Name file and choose save location
-                                <img src="img/Screenshot_92.png" alt="" srcset="">
+                                <img class="lazyload" data-src="img/Screenshot_92.png" src="img/loading.svg" alt="" srcset="">
                             </li>
                             <li>Press Add to Render Queue
                             </li>
                             <li>Render timelines when you're ready
                                 <p>This tab is located in the top right corner</p>
-                                <img src="img/Screenshot_93.png" alt="" srcset="">
+                                <img class="lazyload" data-src="img/Screenshot_93.png" src="img/loading.svg" alt="" srcset="">
                             </li>
                             <li>Go to sleep</li>
                         </ol>
@@ -324,8 +404,9 @@
     </main>
 </body>
 <footer></footer>
-<script defer src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
-<script defer type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+<script src="lib/lazysizes.min.js"></script>
 <script defer src="script.js"></script>
 <script src="https://kit.fontawesome.com/ba957681b0.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+<!-- <script defer type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script> -->
 </html>

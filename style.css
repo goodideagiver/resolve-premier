@@ -6,8 +6,8 @@
     --basic-text:#EDF7F7;
     --most-important-text:#F9564F;
 
-    --gradient-top:#1f0606f1;
-    --gradient-bottom:#4a024de3;
+    --gradient-top:#1d1e2ef1;
+    --gradient-bottom:#2f0d27ed;
 
     --shadow-color: 0deg 0% 0%;
     --shadow-elevation-low:
@@ -37,7 +37,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 html , body {
@@ -51,7 +50,7 @@ body {
 
 body main > header {
     align-items: center;
-    background:linear-gradient(to bottom, var(--gradient-top), var(--gradient-bottom)), url(https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background:linear-gradient(to bottom, var(--gradient-top), var(--gradient-bottom)), url(img/main-bg.png);
     background-size: cover;
     background-position: center;
     color: var(--basic-text);
@@ -74,11 +73,12 @@ main section {
     position: relative;
 }
 
+img[data-sizes="auto"] { display: block; width: 100%; }
+
 article img {
     max-width: 100%;
     display: block;
     border-radius: 5px;
-    box-shadow: var(--shadow-elevation-medium);
     max-height: 80vh;
 }
 
@@ -134,6 +134,7 @@ article li > img {
 .side-list .clickable {
     border-radius: 0;
     width: 100%;
+    text-align: center;
 }
 
 .hide-list {
@@ -299,6 +300,7 @@ article li > img {
     font-family: Roboto Mono;
     box-shadow: 2px 2px 0 2px var(--elevated-base-darker);
     font-weight: normal;
+    margin: 0 5px;
 }
 
 .shortcut::before {
@@ -320,8 +322,8 @@ article li > img {
 
 .hint img {
     border-radius: 5px;
-    box-shadow: var(--shadow-elevation-low);
     margin: 15px 0;
+    max-width: 100% !important;
 }
 
 .clickable {
@@ -348,16 +350,7 @@ article li > img {
 }
 
 .contribute {
-    animation: contribute 10s infinite 5s;
     color: var(--most-important-text);
-}
-
-@keyframes contribute {
-    0% {box-shadow: var(--most-important-text) 0 0 0;}
-    5% {box-shadow: var(--most-important-text) 0 0 5px 0px;
-    transform: scale(1.03);}
-    8% {box-shadow: var(--most-important-text) 0 0 0;transform: scale(1);}
-    100% {box-shadow: var(--most-important-text) 0 0 0;}
 }
 
 .shortcut-grid {
@@ -473,6 +466,14 @@ li.show-btn {
 }
 
 @media screen and (max-width:825px) {
+    .close-btn i {
+        color: var(--basic-text);
+        font-size: 20px;
+    }
+
+    .close-btn {
+        padding: 15px 20px;
+    }
 
     .table-of-contents ol li{
         padding: 5px 0;
@@ -551,4 +552,44 @@ li.show-btn {
         padding: 20px;
     }
 
+}
+
+.hidden {
+    display: none !important;
+}
+
+.fa-mug-hot {
+    animation: 2s funnyrotate infinite;
+}
+
+@keyframes funnyrotate {
+    0% {transform: rotate(20deg);}
+    25% {transform: rotate(20deg);}
+    50% {transform: rotate(-20deg);}
+    75% {transform: rotate(-20deg);}
+    100% {transform: rotate(20deg);}
+}
+
+.donate:hover {
+    background: repeating-linear-gradient(to right,var(--most-important-text),var(--highlingt-color),var(--highlingt-color),var(--most-important-text));
+    background-size: 400% 100%;
+    background-attachment:local;
+    animation: donatebg 8s infinite linear;
+}
+
+@keyframes donatebg {
+    0% {background-position: 0% 0%;}
+    100% {background-position: 400% 100%;}
+}
+
+@media screen and (max-width:800px) {
+    .donate {
+        position: sticky;
+        top: 0;
+        margin-top: 0;
+        background: repeating-linear-gradient(to right,var(--most-important-text),var(--highlingt-color),var(--highlingt-color),var(--most-important-text));
+        background-size: 400% 100%;
+        background-attachment:local;
+        animation: donatebg 8s infinite linear;
+    }
 }
