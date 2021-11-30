@@ -101,6 +101,7 @@ article li > img {
     width: 400px;
     padding: 0 0 2% 0;
     min-width: 25vw;
+    scrollbar-width: none;
 }
 
 .side-list * {
