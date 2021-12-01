@@ -470,7 +470,7 @@ article li > img {
         grid-template-columns: auto auto;
         gap: 2%;
     }
-    main > section {
+    main > article {
         padding: 0 10px;
     }
 }
