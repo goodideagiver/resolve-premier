@@ -28,6 +28,13 @@
 		"description": "Places divs inside next to each other in 50% proportions",
 		"scope":"html"
 	  }
+	  ,
+	  "article": {
+		"prefix": ["article"],
+		"body": ["<article id=\"${0}\" class=\"tut-art\">\n\t<header>\n\t\t<h2>${1:Title}</h2>\n\t</header>\n\t<div>\n\t\t<ol>\n\t\t\t<li>${2:Sample point}\n\t\t\t</li>\n\t\t</ol>\n\t</div>\n</article>"],
+		"description": "Places divs inside next to each other in 50% proportions",
+		"scope":"html"
+	  }
 }
 
  
