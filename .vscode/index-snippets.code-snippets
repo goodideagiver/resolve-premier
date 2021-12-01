@@ -1,0 +1,33 @@
+{
+	// Place your resolve-premier workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"shortcut span": {
+		"prefix": ["short", "shortcut"],
+		"body": ["<span class=\"shortcut\"></span>"],
+		"description": "Resolve premiere shortcut snippet",
+		"scope":"html"
+	  }
+	  ,
+	  "side by side": {
+		"prefix": ["side by side"],
+		"body": ["<div class=\"side-by-side\"></div>"],
+		"description": "Places divs inside next to each other in 50% proportions",
+		"scope":"html"
+	  }
+}
+
+ 
