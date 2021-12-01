@@ -330,6 +330,7 @@ article li > img {
 }
 
 .shortcut {
+    display: inline-block;
     text-transform: uppercase;
     background-color: var(--elevated-base);
     padding: 10px 20px;
@@ -339,7 +340,7 @@ article li > img {
     font-family: Roboto Mono;
     box-shadow: 2px 2px 0 2px var(--elevated-base-darker);
     font-weight: normal;
-    margin: 0 5px;
+    margin: 5px 5px;
 }
 
 .shortcut::before {
