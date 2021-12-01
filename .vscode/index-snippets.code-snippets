@@ -17,14 +17,14 @@
 	// }
 	"shortcut span": {
 		"prefix": ["short", "shortcut"],
-		"body": ["<span class=\"shortcut\"></span>"],
+		"body": ["<span class=\"shortcut\">${0}</span>"],
 		"description": "Resolve premiere shortcut snippet",
 		"scope":"html"
 	  }
 	  ,
 	  "side by side": {
 		"prefix": ["side by side"],
-		"body": ["<div class=\"side-by-side\"></div>"],
+		"body": ["<div class=\"side-by-side\">${0}</div>"],
 		"description": "Places divs inside next to each other in 50% proportions",
 		"scope":"html"
 	  }
