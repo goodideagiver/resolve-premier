@@ -480,6 +480,8 @@ article li > img {
     .shortcut-grid {
         grid-template-columns: auto;
         gap: 1%;
+        overflow: scroll;
+        overflow-x: hidden;
     }
     main > section {
         padding: 0 10px;
@@ -684,4 +686,26 @@ li.show-btn {
 .art-section-head h2 {
     font-size: 5rem;
     color: white;
+}
+
+body > footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    background-color: var(--elevated-base-darker);
+}
+
+body > footer h3 {
+    font-size: 2rem;
+    color: #a84ccf;
+}
+
+body > footer ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
 }
