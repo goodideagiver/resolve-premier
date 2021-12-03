@@ -42,6 +42,13 @@
 		"description": "Places image lazyload template",
 		"scope":"html"
 	  }
+	  ,
+	  "include html": {
+		  "prefix":["include"],
+		  "body": ["<div w3-include-html=\"article/${1:folder}/${2:name}.html\"></div>"],
+		  "description": "Include HTML using W3 include script",
+		  "scope": "html"
+	  }
 }
 
  
