@@ -477,19 +477,34 @@ article li > img {
     }
     main > article {
         padding: 0 10px;
+        height: 100%;
     }
 }
 
 @media screen and (max-width:600px) {
     .shortcut-grid {
         grid-template-columns: auto;
+        grid-auto-rows: auto;
         gap: 1%;
-        overflow: scroll;
-        overflow-x: hidden;
+        margin-bottom: 250px;
     }
     main > section {
         padding: 0 10px;
     }
+
+    .shortcut-grid .shortcut-item {
+        height: 100%;
+        min-height: 0;
+        min-width: 0;
+    }
+
+    .shortcut-grid .shortcut-item span {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .shortcut-grid .shortcut-item span:nth-child(3) {
         position: static;
         visibility: visible;
