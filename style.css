@@ -237,7 +237,6 @@ article li > img {
 }
 
 .side-by-side img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -334,15 +333,16 @@ article li > img {
 .shortcut {
     display: inline-block;
     text-transform: uppercase;
-    background-color: var(--elevated-base);
+    /* background-color: var(--elevated-base); */
     padding: 10px 20px;
     border-radius: 50px;
     width: fit-content;
     font-size: 1rem;
     font-family: Roboto Mono;
-    box-shadow: 2px 2px 0 2px var(--elevated-base-darker);
+    /* box-shadow: 2px 2px 0 2px var(--elevated-base-darker); */
     font-weight: normal;
     margin: 5px 5px;
+    border: var(--basic-text) 2px solid;
 }
 
 .shortcut::before {
@@ -416,6 +416,7 @@ article li > img {
 .shortcut-grid .shortcut-item:nth-child(-n+4) span:nth-child(2) {
     box-shadow: inset 0 0 0 2px royalblue !important;
     background-color: rebeccapurple;
+
 }
 
 .shortcut-grid .shortcut-item:hover span:nth-child(1), .shortcut-grid .shortcut-item:hover span:nth-child(2){
