@@ -53,3 +53,11 @@ function foldSection(clicked_id) {
   var element = document.getElementById(clicked_id);
   element.classList.toggle("hidden");
 }
+
+function setFooterYear() {
+  var today = new Date();
+  var yr = today.getFullYear();
+  document.querySelector('#year').innerHTML = yr;
+}
+
+setFooterYear();

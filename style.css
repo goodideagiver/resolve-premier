@@ -714,6 +714,7 @@ body > footer {
     flex-direction: column;
     padding: 20px 10px;
     background-color: var(--elevated-base-darker);
+    gap: 15px;
 }
 
 body > footer h3 {
@@ -725,6 +726,6 @@ body > footer ul {
     display: flex;
     list-style: none;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
 }
