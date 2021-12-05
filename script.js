@@ -1,14 +1,13 @@
-var list = document.getElementById("sideList");
-
+let list = document.getElementById("sideList");
 function showMenu() {
     list.classList.toggle("hide-list");
 }
 
-var artShown = 1;
-var hideBtn = document.getElementById('hideBtn')
+let artShown = 1;
+let hideBtn = document.getElementById('hideBtn')
 function hideArt() {
-  var unnecessary = document.getElementsByClassName("unc");
-  var i;
+  let unnecessary = document.getElementsByClassName("unc");
+  let i;
   if (artShown=='1') {
     for (i = 0; i < unnecessary.length; i++) {
         unnecessary[i].style.display = "none";
@@ -16,16 +15,16 @@ function hideArt() {
         hideBtn.innerHTML = "Show non essential articles"
     }
   } else {
-    for (i = 0; i < unnecessary.length; i++) {
-        unnecessary[i].style.removeProperty('display');
-        artShown = 1;
-        hideBtn.innerHTML = "Hide non essential articles"
-    }
+      for (i = 0; i < unnecessary.length; i++) {
+          unnecessary[i].style.removeProperty('display');
+          artShown = 1;
+          hideBtn.innerHTML = "Hide non essential articles"
+      }
     }
 }
 
 function darkMode() {
-  var moded = window.localStorage.getItem('light');
+  let moded = window.localStorage.getItem('light');
   switch (moded) {
     case "1":
       window.localStorage.setItem('light','0');
@@ -39,7 +38,7 @@ function darkMode() {
 }
 
 function loadStorage() {
-  var mode =  window.localStorage.getItem('light');
+  let mode =  window.localStorage.getItem('light');
   if (mode==1) {
     document.getElementById('body').classList.add('light');
   } else {
@@ -50,13 +49,13 @@ function loadStorage() {
 loadStorage();
 
 function foldSection(clicked_id) {
-  var element = document.getElementById(clicked_id);
+  let element = document.getElementById(clicked_id);
   element.classList.toggle("hidden");
 }
 
 function setFooterYear() {
-  var today = new Date();
-  var yr = today.getFullYear();
+  let today = new Date();
+  let yr = today.getFullYear();
   document.querySelector('#year').innerHTML = yr;
 }
 
