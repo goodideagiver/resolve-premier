@@ -729,3 +729,24 @@ body > footer ul {
     gap: 15px;
     flex-wrap: wrap;
 }
+
+details summary {
+    display: block;
+    background-color: var(--highlingt-color);
+    text-decoration: none;
+    padding: 15px 20px;
+    width: fit-content;
+    border-radius: 50px;
+    box-shadow: var(--shadow-elevation-medium);
+    font-weight: bold;
+    margin: 0;
+    margin: 10px 0;
+    transition: transform .1s;
+    font-size: 1rem;
+}
+
+details summary:hover {
+    transform: scale(.95);
+    cursor: pointer;
+    filter: brightness(1.1);
+}
