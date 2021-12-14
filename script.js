@@ -60,3 +60,22 @@ function setFooterYear() {
 }
 
 setFooterYear();
+
+// function lazyImagesFold() {
+//   let images = document.querySelectorAll('.lazyload');
+//   for (let i = 0;i < images.length;i++) {
+//     let html = images[i].innerText;
+//     let new_html = "<details>" + html + "</details>";
+//     const text = "<summary>Display gif</summary>";
+//     $(images[i]).wrap('<details></details>');
+//   }
+//   const details = document.querySelectorAll('details');
+//   for (let i = 0;i < details.length;i++) {
+//     let html = details[i].innerHTML;
+//     let new_html = "<details>" + html + "</details>";
+//     const text = "<summary>Display gif</summary>";
+//     $(images[i]).wrap('<details></details>');
+//   }
+// }
+
+// lazyImagesFold();

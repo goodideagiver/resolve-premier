@@ -729,3 +729,8 @@ body > footer ul {
     gap: 15px;
     flex-wrap: wrap;
 }
+
+details {
+    background-color: black;
+    padding: 15px 0;
+}
