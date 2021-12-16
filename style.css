@@ -561,7 +561,7 @@ li.show-btn {
     } */
     
     .side-list {
-        transition: transform .1s,box-shadow 1s,visibility .2s;
+        transition: transform .5s,box-shadow 1s,visibility 1.2s;
     }
 
     .shortcut {
